@@ -15,7 +15,7 @@
   border: 3px solid black;
   border-radius: 5px;
   margin: 0.2rem;
-  max-height: 100%;
+  height: fit-content;
   padding: 0.4rem;
   width: 230px;
 }

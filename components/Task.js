@@ -21,7 +21,7 @@ const Task = ({ item, handleFunction, handleRemove }) => {
   return (
     <div className={styles.task}>
       <form>
-        <label for="status">State: </label>
+        <label htmlFor="status">State: </label>
         <select
           value={status}
           name="status"

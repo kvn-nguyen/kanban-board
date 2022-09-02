@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import React, { useState } from "react";
 import Task from "../components/Task";
@@ -53,14 +52,14 @@ export default function Home() {
     setDisplayTask(false);
   };
 
+  const updateDisplay = () => {
+    setDisplayTask(!displayTask);
+  };
+
   const backlogArray = taskStatus.filter(item => item.status === "backlog");
   const activeArray = taskStatus.filter(item => item.status === "active");
   const reviewArray = taskStatus.filter(item => item.status === "review");
   const resolvedArray = taskStatus.filter(item => item.status === "resolved");
-
-  const updateDisplay = () => {
-    setDisplayTask(!displayTask);
-  };
 
   return (
     <div className={styles.container}>
